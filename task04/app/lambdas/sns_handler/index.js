@@ -5,7 +5,7 @@ exports.handler = async (event) => {
         const snsMessage = record.Sns.Message;
         console.log("Message from SNS:", snsMessage);
     });
-
+    // return
     return {
         statusCode: 200,
         body: JSON.stringify({ message: "SNS Event Processed" })
